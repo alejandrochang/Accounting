@@ -19,11 +19,15 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <Table investments={this.state.data}/>
-      </div>
-    );
+    if (!this.state.data) {
+      return <div>Loading...</div>
+    } else {
+      return (
+        <div>
+          <Table investments={this.state.data} />
+        </div>
+      );
+    }
   }
 }
 
