@@ -1,5 +1,5 @@
 import React from 'react';
-import TableData from './TableData';
+import TableRow from './TableRow';
 import './table.css';
 
 const Table = ({ investments }) => {
@@ -16,7 +16,7 @@ const Table = ({ investments }) => {
             <th>Shares</th>
             <th>Cost</th>
           </tr>
-          <TableData data={investments}/>
+          <TableRow data={investments}/>
         </tbody>
       </table>
     </div>
